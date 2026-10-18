@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Family Control</string>
+
+    <!-- PIN -->
+    <string name="lock_title">أدخل رمز الدخول</string>
+    <string name="lock_sub">هذه الشاشة مخصّصة لولي الأمر فقط</string>
+    <string name="setup_title">أنشئ رمزاً سرياً</string>
+    <string name="setup_sub">اختر 4 أرقام لحماية التطبيق</string>
+    <string name="confirm_title">أكّد الرمز</string>
+    <string name="confirm_sub">أعد إدخال الأرقام الأربعة</string>
+    <string name="pin_wrong">رمز غير صحيح (المحاولات الفاشلة: %1$d)</string>
+    <string name="pin_locked">تم تعطيل الإدخال مؤقتاً. حاول بعد %1$d ثانية</string>
+    <string name="pin_mismatch">الرمزان غير متطابقين، حاول مجدداً</string>
+    <string name="pin_saved">تم حفظ الرمز السري</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="cd_backspace">حذف رقم</string>
+    <string name="cd_logo">شعار Family Control</string>
+
+    <!-- Control screen -->
+    <string name="control_title">التحكم الأبوي</string>
+    <string name="control_sub">إدارة الواي فاي والبلوتوث</string>
+    <string name="wifi_name">الواي فاي</string>
+    <string name="bt_name">البلوتوث</string>
+    <string name="cd_wifi_switch">تبديل الواي فاي</string>
+    <string name="cd_bt_switch">تبديل البلوتوث</string>
+    <string name="btn_change_pin">تغيير الرمز السري</string>
+    <string name="btn_lock">قفل الشاشة مجدداً</string>
+
+    <!-- States -->
+    <string name="state_on">مُفعّل</string>
+    <string name="state_off">مُطفأ</string>
+    <string name="state_turning_on">جارٍ التشغيل…</string>
+    <string name="state_turning_off">جارٍ الإيقاف…</string>
+    <string name="state_unknown">غير معروف</string>
+
+    <!-- Messages -->
+    <string name="wifi_failed">رفض النظام تغيير حالة الواي فاي على هذا الجهاز</string>
+    <string name="bt_failed">رفض النظام تغيير حالة البلوتوث على هذا الجهاز</string>
+    <string name="bt_unsupported">هذا الجهاز لا يدعم البلوتوث</string>
+    <string name="permission_missing">صلاحية ناقصة. نفّذ أوامر ADB الموضحة في README</string>
+</resources>

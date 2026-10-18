@@ -1,0 +1,14 @@
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="bg">#F4F6F8</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="ink">#16213E</color>
+    <color name="ink_dim">#5B6B8C</color>
+    <color name="navy">#16213E</color>
+    <color name="navy_deep">#0D1526</color>
+    <color name="teal">#0D9488</color>
+    <color name="red">#C04444</color>
+    <color name="border">#E3E7ED</color>
+    <color name="key_bg">#EEF1F5</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+</resources>

@@ -1,0 +1,61 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.parent.familycontrol'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.parent.familycontrol"
+        minSdk 26
+
+        // مهم: targetSdk = 28 عمداً.
+        // منذ أندرويد 10 يتجاهل النظام WifiManager.setWifiEnabled() وBluetoothAdapter.enable()
+        // للتطبيقات التي تستهدف API 29+ (وأندرويد 13 يزيد القيود على البلوتوث).
+        // التطبيقات التي تستهدف 28 أو أقل ما زالت تعمل بها، والتثبيت اليدوي (Side-loading)
+        // مسموح لها (أندرويد 14 يرفض فقط ما يستهدف أقل من 23، وأندرويد 15 أقل من 24).
+        targetSdk 28
+
+        versionCode 2
+        versionName "2.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    // تحذيرات targetSdk القديم تخص متجر Google Play فقط، ولا تهمنا هنا
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'ExpiredTargetSdkVersion', 'OldTargetApi'
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
